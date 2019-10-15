@@ -53,7 +53,15 @@ namespace Our.Umbraco.PropertyList.ValueConverters
                 var elements = XElement.Parse(data);
                 if (elements != null && elements.HasElements)
                 {
-                    items.AddRange(elements.XPathSelectElements("value").Select(x => x.Value));
+                    // duct tape solution. Pending: https://github.com/umco/umbraco-property-list/issues/12
+                    if (elements.XPathSelectElement("./value/values") != null)
+                    {
+                        items.AddRange(elements.XPathSelectElements("./value/values"));
+                    }
+                    else
+                    {
+                        items.AddRange(elements.XPathSelectElements("./value").Select(x => x.Value));
+                    }
                 }
             }
 
