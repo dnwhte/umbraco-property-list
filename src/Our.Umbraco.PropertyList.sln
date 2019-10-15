@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build Package", "Build Package", "{02D2DC50-BF81-4ACB-8EE4-1D626733834F}"
 	ProjectSection(SolutionItems) = preProject
 		..\appveyor.yml = ..\appveyor.yml
+		..\azure-pipelines.yml = ..\azure-pipelines.yml
 		..\build\build-appveyor.cmd = ..\build\build-appveyor.cmd
 		..\build.cmd = ..\build.cmd
 		..\build\install.ps1 = ..\build\install.ps1
