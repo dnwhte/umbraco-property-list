@@ -1,0 +1,26 @@
+.umco-property-list-layouts{
+
+}
+
+.umco-property-list-layout{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.umco-property-list-layout__path {
+  flex-grow: 1;
+}
+
+.umco-property-list-layout__sort-handle {
+  align-self: center;
+  color: #d8d7d9;
+  margin-right: 5px;
+}
+
+
+
+.umco-property-list-layout__remove {
+  align-self: center;
+  position: relative;
+}
