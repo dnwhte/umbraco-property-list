@@ -15,7 +15,7 @@
             axis: "y",
             containment: "parent",
             cursor: "move",
-            handle: ".list-view-layout__sort-handle",
+            handle: ".umco-property-list-layout__sort-handle",
             opacity: 0.7,
             scroll: true,
             tolerance: "pointer",

@@ -82,9 +82,11 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Web\UI\App_Plugins\PropertyList\package.manifest" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web\UI\App_Plugins\PropertyList\js\propertylist.js" />
+    <Content Include="Web\UI\App_Plugins\PropertyList\style.css" />
     <Content Include="Web\UI\App_Plugins\PropertyList\views\propertylist.datatypepicker.html" />
     <Content Include="Web\UI\App_Plugins\PropertyList\views\propertylist.html" />
   </ItemGroup>

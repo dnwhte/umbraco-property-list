@@ -1,16 +1,16 @@
 ﻿<div class="umco-property-list alias--{{ model.alias }}" ng-controller="Our.Umbraco.PropertyList.Controllers.PropertyListController as vm">
 
-    <div class="list-view-layouts" ui-sortable="vm.sortableOptions" ng-model="vm.controls">
+    <div class="umco-property-list-layouts" ui-sortable="vm.sortableOptions" ng-model="vm.controls">
 
-        <div class="list-view-layout" ng-repeat="control in vm.controls">
+        <div class="umco-property-list-layout" ng-repeat="control in vm.controls">
 
-            <i class="icon-navigation list-view-layout__sort-handle"></i>
-
-            <div class="list-view-layout__path">
+            <div class="umco-property-list-layout__path">
                 <property-list-property-editor model="control" />
             </div>
 
-            <div ng-if="vm.canDelete()" class="list-view-layout__remove">
+            <i class="icon-navigation umco-property-list-layout__sort-handle"></i>
+
+            <div ng-if="vm.canDelete()" class="umco-property-list-layout__remove">
                 <i class="icon-trash" ng-click="vm.showPrompt(control)"></i>
                 <umb-confirm-action ng-if="control.deletePrompt"
                                     direction="left"
@@ -23,6 +23,6 @@
 
     </div>
 
-    <a href="" class="list-view-add-layout" ng-click="vm.addContent()" ng-if="vm.canAdd()">Add item</a>
+    <a href="" class="umb-node-preview-add" ng-click="vm.addContent()" ng-if="vm.canAdd()">Add</a>
 
 </div>
